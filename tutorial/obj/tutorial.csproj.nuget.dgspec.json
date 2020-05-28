@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/barrett/Programming/Repos/Qsharp-2020/tutorial/tutorial.csproj": {}
+  },
+  "projects": {
+    "/home/barrett/Programming/Repos/Qsharp-2020/tutorial/tutorial.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/barrett/Programming/Repos/Qsharp-2020/tutorial/tutorial.csproj",
+        "projectName": "tutorial",
+        "projectPath": "/home/barrett/Programming/Repos/Qsharp-2020/tutorial/tutorial.csproj",
+        "packagesPath": "/home/barrett/.nuget/packages/",
+        "outputPath": "/home/barrett/Programming/Repos/Qsharp-2020/tutorial/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/barrett/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Quantum.CsharpGeneration": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.11.2004.2825, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.QSharp.Core": {
+              "target": "Package",
+              "version": "[0.11.2004.2825, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.Runtime.Core": {
+              "target": "Package",
+              "version": "[0.11.2004.2825, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.Simulators": {
+              "target": "Package",
+              "version": "[0.11.2004.2825, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "Microsoft.Quantum.Standard": {
+              "target": "Package",
+              "version": "[0.11.2004.2825, )",
+              "generatePathProperty": true
+            },
+            "System.CommandLine": {
+              "target": "Package",
+              "version": "[2.0.0-beta1.20213.1, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/barrett/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/barrett/.nuget/packages/;/usr/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.5.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers/2.9.4/build/Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers/2.9.4/build/Microsoft.CodeAnalysis.Analyzers.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSystem_CommandLine Condition=" '$(PkgSystem_CommandLine)' == '' ">/home/barrett/.nuget/packages/system.commandline/2.0.0-beta1.20213.1</PkgSystem_CommandLine>
+    <PkgMicrosoft_Quantum_Runtime_Core Condition=" '$(PkgMicrosoft_Quantum_Runtime_Core)' == '' ">/home/barrett/.nuget/packages/microsoft.quantum.runtime.core/0.11.2004.2825</PkgMicrosoft_Quantum_Runtime_Core>
+    <PkgMicrosoft_Quantum_QSharp_Core Condition=" '$(PkgMicrosoft_Quantum_QSharp_Core)' == '' ">/home/barrett/.nuget/packages/microsoft.quantum.qsharp.core/0.11.2004.2825</PkgMicrosoft_Quantum_QSharp_Core>
+    <PkgMicrosoft_Quantum_Simulators Condition=" '$(PkgMicrosoft_Quantum_Simulators)' == '' ">/home/barrett/.nuget/packages/microsoft.quantum.simulators/0.11.2004.2825</PkgMicrosoft_Quantum_Simulators>
+    <PkgMicrosoft_Quantum_Standard Condition=" '$(PkgMicrosoft_Quantum_Standard)' == '' ">/home/barrett/.nuget/packages/microsoft.quantum.standard/0.11.2004.2825</PkgMicrosoft_Quantum_Standard>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/home/barrett/.nuget/packages/microsoft.codeanalysis.analyzers/2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_FlowAnalysis_Utilities Condition=" '$(PkgMicrosoft_CodeAnalysis_FlowAnalysis_Utilities)' == '' ">/home/barrett/.nuget/packages/microsoft.codeanalysis.flowanalysis.utilities/2.9.5</PkgMicrosoft_CodeAnalysis_FlowAnalysis_Utilities>
+    <PkgMicrosoft_Quantum_CsharpGeneration Condition=" '$(PkgMicrosoft_Quantum_CsharpGeneration)' == '' ">/home/barrett/.nuget/packages/microsoft.quantum.csharpgeneration/0.11.2004.2825</PkgMicrosoft_Quantum_CsharpGeneration>
+  </PropertyGroup>
+</Project>
