@@ -13,6 +13,7 @@ This contest was the perfect excuse to mess around with quantum computing for th
 
 ## References
 * [Quantum Computing for Computer Scientists](https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965)
+* [Create your first Q# program](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/)
 * [Contest Announcement](https://codeforces.com/blog/entry/77614)
 * [Quantum Katas](https://github.com/Microsoft/QuantumKatas)
 * [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
