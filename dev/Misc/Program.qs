@@ -7,20 +7,27 @@
 
 
     @EntryPoint()
-    operation HelloQ() : Unit {
-        //Message("Hello quantum world!");
-        //PauliGates();
+    operation Entry() : Unit {
         A4_Scratchpad();
     }
 
     operation A4_Scratchpad(): Unit{
-        using((q,r) = (Qubit(), Qubit())){
+        using((qs) = (Qubit[2])){
             DumpMachine();
             Message("--------------------------------------");
             
+            //X(qs[1]);
+            CNOT(qs[0], qs[1]);
+
+            DumpMachine(); // TODO: debug
+
+            if(M(qs[0]) == Zero and M(qs[1]) == One){
+                Message("I tp X"); //0
+            } else{
+                Message("CNOT"); //1
+            }
             
-            Reset(q);
-            Reset(r);
+            ResetAll(qs);
         }
     }
 
