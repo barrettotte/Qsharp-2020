@@ -12,6 +12,13 @@
         PauliGates();
     }
 
+    // set qubit to desired classical state
+    operation Set(desired : Result, q1 : Qubit) : Unit {
+        if (desired != M(q1)) {
+            X(q1);
+        }
+    }
+
 
     // Mess around with Pauli Gates
     operation PauliGates(): Unit{
