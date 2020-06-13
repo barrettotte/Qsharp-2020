@@ -1,4 +1,4 @@
-﻿namespace Misc {
+﻿namespace Scratchpad {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
@@ -9,9 +9,65 @@
     @EntryPoint()
     operation HelloQ() : Unit {
         //Message("Hello quantum world!");
-        PauliGates();
+        //PauliGates();
+        A4_Scratchpad();
     }
 
+    operation A4_Scratchpad(): Unit{
+        using((q,r) = (Qubit(), Qubit())){
+            DumpMachine();
+            Message("--------------------------------------");
+            
+            
+            Reset(q);
+            Reset(r);
+        }
+    }
+
+    operation A3_Scratchpad(): Unit{
+        using((q,r) = (Qubit(), Qubit())){
+            DumpMachine();
+            Message("--------------------------------------");
+            
+            H(q);  // Switch from Z-basis to X-basis
+            //S(q);
+            //S(q);
+            Z(q);
+            Z(q);
+            H(q);  // Switch from X-basis to Z-basis
+
+            if(M(q) == One){
+                Message("S"); // 1
+            } else{
+                Message("Z"); // 0
+            }
+            Reset(q);
+            Reset(r);
+        }
+    }
+
+
+    operation A2_Scratchpad(): Unit{
+        using(q = (Qubit())){
+            DumpMachine();
+            Message("--------------------------------------");
+            
+            H(q);       // switch to X-basis (from Z-basis)
+            //Z(q);
+            I(q);
+            H(q);       // switch to Z-basis
+
+            if(M(q) == One){
+                Message("not identity"); // 1
+            } else{
+                Message("identity"); // 0
+            }
+            
+            Reset(q);
+        }
+    }
+
+    
     // set qubit to desired classical state
     operation Set(desired : Result, q1 : Qubit) : Unit {
         if (desired != M(q1)) {

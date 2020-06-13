@@ -19,5 +19,5 @@ This contest was the perfect excuse to mess around with quantum computing for th
 * [Quantum Katas](https://github.com/Microsoft/QuantumKatas)
 * [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
 * [Awesome Qsharp](https://github.com/ebraminio/awesome-qsharp)
-* [Tensors for Beginners](https://www.youtube.com/watch?v=8ptMTLzV4-I&list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG)
 * [Quantum logic gates](https://en.wikipedia.org/wiki/Quantum_logic_gate)
+* [Q# Libraries](https://docs.microsoft.com/en-us/qsharp/api/qsharp/)

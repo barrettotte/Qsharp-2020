@@ -1,24 +1,24 @@
-﻿namespace Solution {
+﻿namespace A1 {
 
     open Microsoft.Quantum.Intrinsic;
 
     operation Solve (unitary : (Qubit => Unit is Adj+Ctl)) : Int {
-        mutable isIdentity = 0;
+        mutable result = 0;
 
         using(q = Qubit()){
             if(M(q) == One){
-                X(q);
+                X(q); // Force qubit to 0 state
             }
             unitary(q);
 
             if(M(q) == Zero){
-                set isIdentity = 0;
+                set result = 0; // Identity
             } else{
-                set isIdentity = 1;
+                set result = 1; // Pauli X
             }
             Reset(q);
         }
-        return isIdentity;
+        return result;
     }
 }
 
