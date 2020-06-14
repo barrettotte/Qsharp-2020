@@ -1,4 +1,4 @@
-namespace B2 {
+namespace B1 {
     
     open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Intrinsic;

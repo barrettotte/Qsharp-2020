@@ -26,12 +26,30 @@
             Message("--------------------------------------");
 
             
+            mutable result = Zero;
+            X(qs[0]);
+            X(qs[1]);
 
-            if(M(qs[1]) == Zero){
-                Message("-Z"); // transformation is -Z gate
-            } else{
-                Message("Z");
+            using(ancilla = Qubit()){
+                repeat{
+                    for(i in 0..Length(qs)-1){
+                        X(qs[i]); 
+                        H(qs[i]);
+                    }
+                    Controlled X(qs, ancilla);
+                    set result = M(ancilla);
+                    Reset(ancilla);
+                } until(result == Zero);
+                
+                Reset(ancilla);
             }
+            X(qs[0]);
+            X(qs[1]);
+            
+
+
+            DumpMachine();
+
             ResetAll(qs);
         }
     }
