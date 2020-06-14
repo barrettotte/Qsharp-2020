@@ -1,4 +1,4 @@
-# Python-Q#
+# Python-Qsharp
 
 Tutorial program for running Q# from Python
 
