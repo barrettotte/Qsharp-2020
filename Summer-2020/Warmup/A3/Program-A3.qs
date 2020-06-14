@@ -17,7 +17,6 @@ namespace A3 {
             } else{
                 set result = 0; // Z Gate
             }
-
             Reset(q);
         }
         return result;

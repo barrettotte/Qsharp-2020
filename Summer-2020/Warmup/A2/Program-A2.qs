@@ -1,5 +1,5 @@
 namespace A2 {
-
+    
     open Microsoft.Quantum.Intrinsic;
 
     operation Solve (unitary : (Qubit => Unit is Adj+Ctl)) : Int {

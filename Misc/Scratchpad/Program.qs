@@ -4,12 +4,43 @@
     open Microsoft.Quantum.Intrinsic;
     
     open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Math;
 
 
     @EntryPoint()
     operation Entry() : Unit {
-        A4_Scratchpad();
+        A5_Scratchpad();
     }
+
+
+    operation A5_Scratchpad(): Unit{
+        using((q) = (Qubit())){
+            DumpMachine();
+            Message("--------------------------------------");
+
+
+            //ApplyPauli([PauliZ], [q]);
+            //Rz(-2.0 * PI(), q);
+
+            //Z(q); 
+
+            // -Z
+            X(q);
+            Z(q);
+            X(q);
+
+            DumpMachine();
+
+            if(Measure([PauliZ], [q]) == Zero){
+                Message("Z");
+            } else{
+                Message("-Z");
+            }
+
+            Reset(q);
+        }
+    }
+
 
     operation A4_Scratchpad(): Unit{
         using((qs) = (Qubit[2])){
