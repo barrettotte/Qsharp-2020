@@ -1,21 +1,18 @@
-# Qsharp-2020
+# Qsharp
 
-My notes and solutions for [Microsoft Q# Coding Contest](https://codeforces.com/blog/entry/77614)
+Learning the fundamentals of Quantum Computing with Q#.
 
-This contest was the perfect excuse to mess around with quantum computing for the first time.
+The Microsoft Q# Coding Contest was the perfect excuse to dive into the quantum world a bit.
 
 
-## Learning Approach
-* Refresh on some mathematics - matrix algebra, vector spaces, and tensors.
-* Read [Quantum Computing for Computer Scientists](https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965)
-* Go through [Quantum Katas](https://github.com/Microsoft/QuantumKatas)
-* Review previous years contests
+## Contents
+* [Misc/](Misc/) - Random Q# programs, nothing special
+* [Notes/](Notes/) - Notes for learning the fundamentals of Quantum Computing
+* [Summer-2020/](Summer-2020/) - Solutions for [Microsoft Q# Coding Contest (Summer 2020)](https://codeforces.com/blog/entry/77614)
 
 
 ## References
 * [Quantum Computing for Computer Scientists](https://www.amazon.com/Quantum-Computing-Computer-Scientists-Yanofsky/dp/0521879965)
-* [Create your first Q# program](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/)
-* [Contest Announcement](https://codeforces.com/blog/entry/77614)
 * [Quantum Katas](https://github.com/Microsoft/QuantumKatas)
 * [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
 * [Awesome Qsharp](https://github.com/ebraminio/awesome-qsharp)
