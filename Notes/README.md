@@ -11,6 +11,13 @@ Notes for learning Quantum Computing.
 * Review previous years contests
 
 
+## Prior Contests
+* Summer 2018 warmup - https://assets.codeforces.com/rounds/997-998/warmup-editorial.pdf
+* Summer 2018 main   - https://assets.codeforces.com/rounds/997-998/main-contest-editorial.pdf
+* Winter 2019 warmup - https://assets.codeforces.com/rounds/1115/warmup-editorial.pdf
+* Winter 2019 main   - https://assets.codeforces.com/rounds/1116/contest-editorial.pdf
+
+
 ## Creating and Running Console Application
 * Command Palette -> ```Q#:Create New Project```
 * Standalone console application
