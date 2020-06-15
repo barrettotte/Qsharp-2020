@@ -13,3 +13,4 @@ Tutorial program for running Q# from Python
 ## References
 * [Develop with Q# and Python](https://docs.microsoft.com/en-us/quantum/install-guide/pyinstall)
 * [Tutorial: Implement a Quantum Random Number Generator in Q#](https://docs.microsoft.com/en-us/quantum/quickstarts/qrng?tabs=tabid-python)
+* [Basic Classification: Classify data ]

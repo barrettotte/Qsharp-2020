@@ -21,4 +21,4 @@ Notes for learning Quantum Computing.
 
 ## References
 * [Create your first Q# program](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/)
-
+* [Develop with Q# Jupyter Notebooks](https://docs.microsoft.com/en-us/quantum/install-guide/qjupyter)
