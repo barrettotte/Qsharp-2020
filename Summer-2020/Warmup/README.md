@@ -3,6 +3,8 @@
 The problem set for Microsoft Q# Coding Contest Summer 2020 - warmup round
 
 
+Answers explained after warmup round -> https://codeforces.com/blog/entry/78832
+
 
 ## A1. Distinguish I from X
 You are given an operation that implements a single-qubit unitary transformation: either the identity (I gate) or the X gate. The operation will have Adjoint and Controlled variants defined.
