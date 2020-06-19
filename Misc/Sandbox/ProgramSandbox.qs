@@ -4,6 +4,7 @@
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Diagnostics;
     open Microsoft.Quantum.Math;
+    open Microsoft.Quantum.Measurement;
 
 
     @EntryPoint()
@@ -21,25 +22,29 @@
     
 
     operation Scratchpad(): Unit {
-        mutable result = 0; // Assume operation is CNOT_12
+        mutable result = 0; // Assume operation is Hadamard Gate
 
-        // CNOT_12: {00 -> 00, 01 -> 01, 10 -> 11, 11 -> 10}
-        // CNOT_21: {00 -> 00, 01 -> 11, 10 -> 10, 11 -> 01}
+        using(q = Qubit()){
+            // X = HZH
 
-        using(qs = Qubit[2]){
-            X(qs[0]);    // 00 -> 10
-            CNOT(qs[0], qs[1]);
+            //H(q);
+            X(q);
 
-            if(M(qs[1]) == Zero){
-                set result = 1;
-            }
-            ResetAll(qs);
+            Z(q);
+
+            //H(q);
+            X(q);
+
+            set result = MResetZ(q) == One ? 0 | 1;
+            Reset(q);
         }
+        DumpMachine();
         if(result == 0){
-            Message("CNOT_12");
+            Message("H");
         } else{
-            Message("CNOT_21");
+            Message("X");
         }
+        // return result; // TODO:
     }
 
 

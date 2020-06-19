@@ -1,4 +1,4 @@
-namespace Solution {
+namespace A1 {
     open Microsoft.Quantum.Intrinsic;
 
     operation Solve (unitary: (Qubit[] => Unit is Adj+Ctl)): Int {

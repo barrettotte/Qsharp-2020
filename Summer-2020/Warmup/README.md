@@ -2,6 +2,7 @@
 
 The problem set for Microsoft Q# Coding Contest Summer 2020 - warmup round
 
+Placed 75th - https://codeforces.com/contest/1356/standings
 
 Answers explained after warmup round -> https://codeforces.com/blog/entry/78832
 
