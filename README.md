@@ -19,5 +19,6 @@ The Microsoft Q# Coding Contest was the perfect excuse to dive into the quantum 
 * [Quantum logic gates](https://en.wikipedia.org/wiki/Quantum_logic_gate)
 * [Q# Libraries](https://docs.microsoft.com/en-us/qsharp/api/qsharp/)
 * [IBM Quantum Circuit Composer](https://quantum-computing.ibm.com/composer)
+* [IBM Quantum Computing Docs](https://quantum-computing.ibm.com/docs/circ-comp/q-gates)
 * [Qsharp Code Samples](https://docs.microsoft.com/en-us/samples/browse/?languages=qsharp)
 * [Q# 0.10 Language Quick Reference](https://github.com/Microsoft/QuantumKatas/blob/master/quickref/qsharp-quick-reference.pdf)
