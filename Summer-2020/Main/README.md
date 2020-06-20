@@ -176,3 +176,65 @@ namespace Solution {
     }
 }
 ```
+
+
+## B1. "Is the bit string balanced?" oracle
+https://codeforces.com/contest/1357/problem/B1
+
+Implement a quantum oracle on 𝑁 qubits which checks whether the input bit string is balanced, i.e., whether it has exactly 𝑁/2 zeros and 𝑁/2 ones in it.
+
+Your operation should take the following inputs:
+* an array of 𝑁 ≤ 10 qubits "inputs" in an arbitrary state. 𝑁 will be an even number.
+* a qubit "output" in an arbitrary state. 
+
+Your operation should perform a unitary transformation on those qubits that can be described by its effect on the basis states: if "inputs" is in the basis state |𝑥⟩ and "output" is in the basis state |𝑦⟩, the result of applying the operation should be |𝑥⟩|𝑦 ⊕ 𝑓(𝑥)⟩, where 𝑓(𝑥)=1 if the bit string 𝑥 has the same number of zeros and ones in it, and 0 otherwise.
+
+For example, if the qubits passed to your operation are in the state 1/√(2)(|01⟩ + |00⟩)𝑥 ⊗ |0⟩𝑦, the state of the system after applying the operation should be 1/√(2)(|01⟩𝑥 ⊗ |1⟩𝑦 + |00⟩𝑥|0⟩𝑦).
+
+Your code should have the following signature (note that your operation should have Adjoint and Controlled variants defined for it; is Adj+Ctl in the operation signature will generate them automatically based on your code):
+
+```php
+namespace Solution {
+    open Microsoft.Quantum.Intrinsic;
+
+    operation Solve (inputs : Qubit[], output : Qubit) : Unit is Adj+Ctl {
+        // your code here
+    }
+}
+```
+
+Your code is not allowed to use measurements or arbitrary rotation gates. This operation can be implemented using just the X gate and its controlled variants (possibly with multiple qubits as controls).
+
+
+## B2. "Is the number divisible by 3?" oracle
+https://codeforces.com/contest/1357/problem/B2
+
+Implement a quantum oracle on 𝑁 qubits which checks whether the input bit string is a little-endian notation of a number that is divisible by 3.
+
+Your operation should take the following inputs:
+* an array of 𝑁 ≤ 8 qubits "inputs" in an arbitrary state.
+* a qubit "output" in an arbitrary state. 
+
+Your operation should perform a unitary transformation on those qubits that can be described by its effect on the basis states: if "inputs" is in the basis state |𝑥⟩
+and "output" is in the basis state |𝑦⟩, the result of applying the operation should be |𝑥⟩|𝑦⊕𝑓(𝑥)⟩, where 𝑓(𝑥)=1 if the integer represented by the bit string 𝑥 is divisible by 3, and 0
+
+otherwise.
+
+For example, if the qubits passed to your operation are in the state 12√(|110⟩+|001⟩)𝑥⊗|0⟩𝑦=12√(|3⟩+|4⟩)𝑥⊗|0⟩𝑦
+, the state of the system after applying the operation should be 12√(|3⟩𝑥⊗|1⟩𝑦+|4⟩𝑥|0⟩𝑦)=12√(|110⟩𝑥⊗|1⟩𝑦+|001⟩𝑥|0⟩𝑦)
+
+.
+
+Your code should have the following signature (note that your operation should have Adjoint and Controlled variants defined for it; is Adj+Ctl in the operation signature will generate them automatically based on your code):
+
+```php
+namespace Solution {
+    open Microsoft.Quantum.Intrinsic;
+
+    operation Solve (inputs : Qubit[], output : Qubit) : Unit is Adj+Ctl {
+        // your code here
+    }
+}
+```
+
+Your code is not allowed to use measurements or arbitrary rotation gates. This operation can be implemented using just the X gate and its controlled variants (possibly with multiple qubits as controls).

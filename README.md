@@ -22,3 +22,4 @@ The Microsoft Q# Coding Contest was the perfect excuse to dive into the quantum 
 * [IBM Quantum Computing Docs](https://quantum-computing.ibm.com/docs/circ-comp/q-gates)
 * [Qsharp Code Samples](https://docs.microsoft.com/en-us/samples/browse/?languages=qsharp)
 * [Q# 0.10 Language Quick Reference](https://github.com/Microsoft/QuantumKatas/blob/master/quickref/qsharp-quick-reference.pdf)
+* [Bloch Sphere Visualizer](https://javafxpert.github.io/grok-bloch/)

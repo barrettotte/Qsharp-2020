@@ -1,5 +1,6 @@
 ﻿namespace Sandbox {
 
+    open Microsoft.Quantum.Arithmetic;
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Diagnostics;
@@ -19,32 +20,19 @@
         Z(q);
         X(q);
     }
+
+    // Increment an unsigned integer stored in little endian qubit array
+    operation Increment(qs: Qubit[]): Unit is Adj+Ctl{
+        for (i in Length(qs) - 1 .. -1 .. 0) {
+            Controlled X(qs[0 .. i - 1], qs[i]);
+        }
+    }
     
 
     operation Scratchpad(): Unit {
-        mutable result = 0; // Assume operation is Hadamard Gate
+        //mutable result = 0;
 
-        using(q = Qubit()){
-            // X = HZH
-
-            //H(q);
-            X(q);
-
-            Z(q);
-
-            //H(q);
-            X(q);
-
-            set result = MResetZ(q) == One ? 0 | 1;
-            Reset(q);
-        }
-        DumpMachine();
-        if(result == 0){
-            Message("H");
-        } else{
-            Message("X");
-        }
-        // return result; // TODO:
+        
     }
 
 
