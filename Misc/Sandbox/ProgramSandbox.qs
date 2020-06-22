@@ -31,7 +31,6 @@
 
     operation Scratchpad(): Unit {
         //mutable result = 0;
-
         
     }
 
