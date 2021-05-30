@@ -1,8 +1,8 @@
-# Qsharp
+# Qsharp-2020
 
 Learning the fundamentals of Quantum Computing with Q#.
 
-The Microsoft Q# Coding Contest was the perfect excuse to dive into the quantum world a bit.
+The Summer 2020 Microsoft Q# Coding Contest was the perfect excuse to dive into the quantum world a bit.
 
 ## Contents
 
